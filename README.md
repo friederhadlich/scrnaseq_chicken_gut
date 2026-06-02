@@ -180,7 +180,7 @@ kable(f_summarize_seurat_list(samples_filt_original))
 
 # Empty drops removal
 
-Estimate and remove Empty droplets (i.e. absence of barcodes containing
+Estimate and remove Empty droplets (i.e. droplets with barcodes containing no
 cells)
 
 Emptydrops supposes that the barcodes with low UMI (RNA transcripts)
