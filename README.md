@@ -391,7 +391,7 @@ Important step for filtering out the lysed cells
 
 Subset the data: keep cells with total features with \> 200 and \< 2500
 per cell; percent of mitochondria and ribosome per sample \< 95th
-percentile%; nCount_RNA \<= 95th percentile: read more about low quality
+percentile; nCount_RNA \<= 95th percentile: read more about low quality
 cells filtering in
 <https://hbctraining.github.io/scRNA-seq/lessons/04_SC_quality_control.html>
 and Seurat tutorial
