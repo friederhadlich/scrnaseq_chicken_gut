@@ -759,7 +759,7 @@ paper1.markers <- c(lapply(celltype.plate.id, function(id) {
 ## Markers of paper 2
 
 Markers from the paper: Spatiotemporal analysis of human intestinal
-development at single-cell resolution
+development at single-cell resolution, https://doi.org/10.1016/j.cell.2020.12.016
 
 ``` r
 # enterocytes markers
@@ -862,7 +862,7 @@ print(markers.db[markers.db %in% genes.cluster]) # cluster 3 is stem cells (give
 ## Cluster 4: scMayoMap annotation of subclusters
 
 ``` r
-# correction for false positives 
+# Filter out cluster 4 subcluster markers with avg_log2FC threshold of 0.1 and p_val_adj < 0.05 
 cell_subclusters_markers$cluster4 %>% 
     group_by(cluster) %>%
     dplyr::filter(avg_log2FC >= 0.1) %>%
