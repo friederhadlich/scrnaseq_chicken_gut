@@ -1,4 +1,4 @@
-Single-cell RNA Seq Chicken Gut Downstream Analysis
+Single-nucleus RNA Seq Chicken Gut Downstream Analysis
 ================
 
 - [Libraries](#libraries)
