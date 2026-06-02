@@ -725,10 +725,10 @@ panglao.stem <-  panglao.genes[
 
 ## Markers of paper 1
 
-Markers from the paper: A single-cell survey of the small intestinal
-epithelium from droplet based dataset
-
+Markers from the paper: A single-cell survey of the small intestinal epithelium, https://doi.org/10.1038/nature24489
+ 
 ``` r
+# from droplet based dataset
 scSurveySIEpithelium <-  read.xlsx(
   "FINAL_CodesResults/TABLES/41586_2017_BFnature24489_MOESM3_ESM.xlsx", 
   sheet = "Summary", startRow = 4, colNames= FALSE)
