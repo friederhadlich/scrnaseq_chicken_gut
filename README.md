@@ -582,7 +582,7 @@ for (i in 1:length(cell_subclusters)) {
  cell_subclusters[[i]] <- FindSubCluster(
    all_samples_sctransformed, cluster = total_clusters[i], 
    resolution = 0.1, graph.name = "SCT_snn", 
-   subcluster.name = "sub.cluster", algorithm = 4) 
+   subcluster.name = "sub.cluster", algorithm = 4) # Leiden clustering
       
   cell_subclusters[[i]] <- subset(
     cell_subclusters[[i]], subset = harmony_clusters_0pt3 == total_clusters[i])
@@ -627,7 +627,7 @@ kable(f_summarize_seurat_list(cell_subclusters))
 | n_cell | 26693 | 19662 | 10979 | 4616 | 4431 | 4221 | 2015 | 1904 | 845 | 518 | 441 |
 | n_feature | 18807 | 18807 | 18807 | 18807 | 18807 | 18807 | 18807 | 18807 | 18807 | 18807 | 18807 |
 
-# Filter subcluster markers
+# Filter main cluster markers
 
 ``` r
 allsamples.sct.merged.pos.markers  %>% 
@@ -797,7 +797,7 @@ immune.STpaper <- c("PTPRC", "MERTK", "CTSC", "CTSD", "CD14", "FGL2",
                     "TPSAB1", "CPA3", "MS4A2")
 ```
 
-# Annotate unknown clusters
+# Annotate unknown or ambiguous clusters
 
 ## Cluster 1 & 2
 
