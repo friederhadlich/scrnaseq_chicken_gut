@@ -45,7 +45,7 @@ Single-nucleus RNA Seq Chicken Gut Downstream Analysis
 - [Figure 1a](#figure-1a)
 - [Save final Seurat object](#save-final-seurat-object)
 
-This file deals with the pre-processing of sc-RNA seq data, dimension
+This file deals with the pre-processing of single-nucleus RNA seq data, dimension
 reduction and clustering, and cell-type annotation.
 
 # Libraries
